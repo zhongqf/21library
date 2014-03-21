@@ -33,6 +33,7 @@ body {
 }
 
 /* Demonstrate the grids */
+/* 
 .col-xs-4 {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -41,6 +42,7 @@ body {
   border: 1px solid #ddd;
   border: 1px solid rgba(86,61,124,.2);
 }
+*/
 
 .container .navbar-header,
 .container .navbar-collapse {

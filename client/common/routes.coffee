@@ -6,3 +6,5 @@ Router.map ->
   @route 'root',
     path: '/'
     template: 'root'
+    yieldTemplates:
+      'sidebar': {to: 'sidebar'}

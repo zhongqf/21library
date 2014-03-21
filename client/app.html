@@ -1,5 +1,5 @@
 <head>
-  <title>21library</title>
+  <title>21Library</title>
 </head>
 
 <body>
@@ -11,7 +11,11 @@
 </template>
 
 <template name="root">
-  hello
+  mainpage
+</template>
+
+<template name="sidebar">
+  sidebar
 </template>
 
 <template name="pageLayout">
@@ -43,6 +47,15 @@
   </div>
 
   <div class="container">
-    {{ yield }}
+    <div class="row">
+      <div id="mainpage" class="col-xs-8">
+        {{ yield }}
+      </div>
+      <div id="sidebar" class="col-xs-4">
+        <div class="wrapper">
+          {{ yield "sidebar" }}
+        </div>
+      </div>
+    </div>
   </div>
 </template>
