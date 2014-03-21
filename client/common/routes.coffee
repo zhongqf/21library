@@ -1,10 +1,15 @@
 Router.configure
-  layoutTemplate: 'pageLayout'
+  layoutTemplate: 'layoutPage'
   autoRender: false
 
 Router.map ->
   @route 'root',
     path: '/'
-    template: 'root'
+    before :->
+      @redirect '/explore'
+
+  @route 'explore',
+    path: '/explore'
+    template: 'pageExplore'
     yieldTemplates:
-      'sidebar': {to: 'sidebar'}
+      'sidebarExplore': {to: 'sidebar'}
