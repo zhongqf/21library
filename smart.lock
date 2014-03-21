@@ -1,0 +1,32 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "bootstrap3-sass": {},
+      "iron-router": {},
+      "momentjs": {}
+    },
+    "packages": {
+      "bootstrap3-sass": {
+        "git": "https://github.com/reywood/meteor-bootstrap3-sass.git",
+        "tag": "v3.1.1-2",
+        "commit": "39e1431d0692a9d09e4e6865e5a52263a32dc854"
+      },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.4",
+        "commit": "927bbaed1b87894fb6fb70807f74ff3a5bd89f29"
+      },
+      "momentjs": {
+        "git": "https://github.com/crapthings/meteor-momentjs.git",
+        "tag": "v2.1.0.2",
+        "commit": "59a762e297082eea8b8cae00374c2b7ac6f89529"
+      },
+      "scss": {
+        "git": "https://github.com/fourseven/meteor-scss.git",
+        "tag": "v0.8.3",
+        "commit": "84fa8b09766e85a9e85b5606903f4222b7dd7605"
+      }
+    }
+  }
+}

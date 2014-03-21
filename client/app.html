@@ -1,0 +1,48 @@
+<head>
+  <title>21library</title>
+</head>
+
+<body>
+  {{> body}}
+</body>
+
+<template name="body">
+  {{ renderRouter }}
+</template>
+
+<template name="root">
+  hello
+</template>
+
+<template name="pageLayout">
+  <!-- Navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Action</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <form class="navbar-form" role="form">
+            <input type="text" placeholder="Search..." class="form-control" />
+          <button class="btn">Ask Question</button>
+          <button class="btn">Post Article</button>
+        </form>
+      </div>
+    </div> 
+  </div>
+
+  <div class="container">
+    {{ yield }}
+  </div>
+</template>

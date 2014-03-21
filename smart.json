@@ -1,0 +1,8 @@
+{
+  "packages": {
+    "bootstrap3-sass": {},
+    "iron-router": {},
+    "momentjs":{}
+    
+  }
+}
